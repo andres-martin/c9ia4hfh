@@ -6,6 +6,7 @@ gem 'rails', '5.0.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 gem 'tzinfo-data'
+gem 'rb-readline', '~> 0.5.0', :require => false
   # Use SCSS for stylesheets      # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'sass-rails', '~> 5.0'
