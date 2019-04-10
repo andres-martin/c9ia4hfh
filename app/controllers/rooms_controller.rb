@@ -15,7 +15,7 @@ class RoomsController < ApplicationController
       render :new
     end
   end
-
+# methods to edit, update and delete data from db
   def edit
     @room = Room.find(params[:id])
   end
@@ -27,6 +27,13 @@ class RoomsController < ApplicationController
     else
       render :edit
     end  
+  end
+
+  def destroy
+    room = Room.find(params[:id])
+    room.destroy
+
+    redirect_to rooms_path, notice: "Room succesfully deleted"
   end
 
 
